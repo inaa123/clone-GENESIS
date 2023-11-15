@@ -4,7 +4,7 @@
     position: fixed;
     bottom: 40px;//아래있으니 바텀
     right: 40px;
-    z-index: 999999;
+    z-index: 998;
     opacity: 1;
     .chat-btn{
         border: none;
@@ -43,9 +43,10 @@
         */
     }
 
-    .visual-item{
+    .swiper-container{
         width: 100%;
         height: 100%;
+        
     }
     .visual-text{
         position: relative;
@@ -93,6 +94,7 @@
     }//visual-text
 
     .visual-controls{
+        //visual-wrapper에 영역값이 없기 때문에 position이들어가면 영역값을 못받아 옴.
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
@@ -101,7 +103,25 @@
         display: flex;
         align-items: center;
         gap:30px;
-        .dot-list{
+        z-index: 9;
+        
+        .swiper-pagination{
+            position: static; //static은 positionㅇㅇ가 없음
+            .swiper-pagination-bullet{
+                width: 8px;
+                height: 8px;
+                border-radius: 100%;
+                background: rgba(255,255,255,0.7);
+                border: solid 2px transparent;
+                background-clip : padding-box;
+                &.swiper-pagination-bullet-active{
+                    background: transparent;
+                    border-color: $white;
+                }
+            }
+        }
+
+        .dot-list{ //dot-list ~ li안씀
             display: flex;
             gap: 20px;
             li{
@@ -126,6 +146,7 @@
                     //border: solid 2px $white; 밑으로 처짐. 사이즈 over돼서
                 } 
             }
+            
         }
         .pause-btn{
             //영역이 이미지보다 더 큼?

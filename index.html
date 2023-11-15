@@ -6,6 +6,12 @@
     <title>Genesis</title>
     <link rel="stylesheet" href="./css/common.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!--box-icons페이지 - usage - import CSS - 링크 복사-->
+
+    <!--swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./script/common.js"></script>
 </head>
 <body>
     <ul class="skip-menu">
@@ -23,8 +29,561 @@
             </h1>
             <nav class="gnb pc">
                 <ul class="gnb-list">
-                    <li><a href="#" title="대메뉴">모델</a></li>
-                    <li><a href="#" title="대메뉴">구매</a></li>
+                    <li>
+                        <a href="#" title="대메뉴">모델</a>
+                        <div class="subMenu-wrapper">
+                            <div class="subMenu-inner inner">
+                                <div class="subMenu subMenu-model">
+                                    <div class="subMenu-left">
+                                        <strong>모델</strong>
+                                        <ul>
+                                            <li><a href="#" data-target="all">ALL</a></li> <!--data-target id?와 비슷한 역할을 한ㄷㅏ. index보다 정확한 방법-->
+                                            <li><a href="#" data-target="sedan">SEDAN</a></li>
+                                            <li><a href="#" data-target="suv">SUV</a></li>
+                                        </ul>
+                                    </div><!--left-->
+                                    <div class="subMenu-right">
+                                        <div class="subMenu-right-model subMenu-right-item all">
+                                            <div class="subMenu-item">
+                                                <!--swiper-->
+                                                <div class="swiper-container">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <ul>
+                                                                <li>
+                                                                    <div class="model-text">
+                                                                        <strong>G90</strong>
+                                                                        <p>LONG WHEEL BASE</p>
+                                                                    </div>
+                                                                    <img src="./images/g90.png" alt="g90">
+                                                                    <a href="#" class="dic-btn">자세히 보기</a>
+                                                                    <div class="model-link">
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>견적내기</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>시승신청</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    <div class="model-text">
+                                                                        <strong>G90</strong>
+                                                                        <p>LONG WHEEL BASE</p>
+                                                                    </div>
+                                                                    <img src="./images/G80.png" alt="g90">
+                                                                    <a href="#" class="dic-btn">자세히 보기</a>
+                                                                    <div class="model-link">
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>견적내기</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>시승신청</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    <div class="model-text">
+                                                                        <strong>G90</strong>
+                                                                        <p>LONG WHEEL BASE</p>
+                                                                    </div>
+                                                                    <img src="./images/G70 2021.png" alt="g90">
+                                                                    <a href="#" class="dic-btn">자세히 보기</a>
+                                                                    <div class="model-link">
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>견적내기</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>시승신청</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    <div class="model-text">
+                                                                        <strong>G90</strong>
+                                                                        <p>LONG WHEEL BASE</p>
+                                                                    </div>
+                                                                    <img src="./images/g90.png" alt="g90">
+                                                                    <a href="#" class="dic-btn">자세히 보기</a>
+                                                                    <div class="model-link">
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>견적내기</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>시승신청</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    <div class="model-text">
+                                                                        <strong>G90</strong>
+                                                                        <p>LONG WHEEL BASE</p>
+                                                                    </div>
+                                                                    <img src="./images/G80.png" alt="g90">
+                                                                    <a href="#" class="dic-btn">자세히 보기</a>
+                                                                    <div class="model-link">
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>견적내기</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>시승신청</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    <div class="model-text">
+                                                                        <strong>G90</strong>
+                                                                        <p>LONG WHEEL BASE</p>
+                                                                    </div>
+                                                                    <img src="./images/GV70.png" alt="g90">
+                                                                    <a href="#" class="dic-btn">자세히 보기</a>
+                                                                    <div class="model-link">
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>견적내기</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>시승신청</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                    
+                                                                </li>
+                                                            </ul>
+                                                        </div><!--swiper-slide-->
+                                                        <div class="swiper-slide">
+                                                            <ul>
+                                                                <li>
+                                                                    <div class="model-text">
+                                                                        <strong>G90</strong>
+                                                                        <p>LONG WHEEL BASE</p>
+                                                                    </div>
+                                                                    <img src="./images/GV70.png" alt="g90">
+                                                                    <a href="#" class="dic-btn">자세히 보기</a>
+                                                                    <div class="model-link">
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>견적내기</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>시승신청</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    <div class="model-text">
+                                                                        <strong>G90</strong>
+                                                                        <p>LONG WHEEL BASE</p>
+                                                                    </div>
+                                                                    <img src="./images/g90.png" alt="g90">
+                                                                    <a href="#" class="dic-btn">자세히 보기</a>
+                                                                    <div class="model-link">
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>견적내기</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>시승신청</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    <div class="model-text">
+                                                                        <strong>GV70</strong>
+                                                                        <p>LONG WHEEL BASE</p>
+                                                                    </div>
+                                                                    <img src="./images/GV70.png" alt="g90">
+                                                                    <a href="#" class="dic-btn">자세히 보기</a>
+                                                                    <div class="model-link">
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>견적내기</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>시승신청</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    <div class="model-text">
+                                                                        <strong>G90</strong>
+                                                                        <p>LONG WHEEL BASE</p>
+                                                                    </div>
+                                                                    <img src="./images/GV80.png" alt="g90">
+                                                                    <a href="#" class="dic-btn">자세히 보기</a>
+                                                                    <div class="model-link">
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>견적내기</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>시승신청</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    <div class="model-text">
+                                                                        <strong>GV60</strong>
+                                                                        <p>LONG WHEEL BASE</p>
+                                                                    </div>
+                                                                    <img src="./images/GV60.png" alt="g90">
+                                                                    <a href="#" class="dic-btn">자세히 보기</a>
+                                                                    <div class="model-link">
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>견적내기</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>시승신청</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                    
+                                                                </li>
+                                                                
+                                                            </ul>
+                                                        </div><!--swiper-slide 2페이지-->
+                                                    </div><!--swiper-wrapper-->
+                                                    <div class="swiper-button-prev"></div>
+                                                    <div class="swiper-button-next"></div>
+                                                </div><!--swiper-container-->
+                                            </div>
+                                        </div>
+
+                                        <div class="subMenu-right-model subMenu-right-item sedan">
+                                            <div class="subMenu-item">
+                                                <!--swiper-->
+                                                <div class="swiper-container">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <ul>
+                                                                <li>
+                                                                    <div class="model-text">
+                                                                        <strong>G90</strong>
+                                                                        <p>LONG WHEEL BASE</p>
+                                                                    </div>
+                                                                    <img src="./images/g90.png" alt="g90">
+                                                                    <a href="#" class="dic-btn">자세히 보기</a>
+                                                                    <div class="model-link">
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>견적내기</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>시승신청</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    <div class="model-text">
+                                                                        <strong>G90</strong>
+                                                                        <p>LONG WHEEL BASE</p>
+                                                                    </div>
+                                                                    <img src="./images/G80.png" alt="g90">
+                                                                    <a href="#" class="dic-btn">자세히 보기</a>
+                                                                    <div class="model-link">
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>견적내기</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>시승신청</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    <div class="model-text">
+                                                                        <strong>G90</strong>
+                                                                        <p>LONG WHEEL BASE</p>
+                                                                    </div>
+                                                                    <img src="./images/G70 2021.png" alt="g90">
+                                                                    <a href="#" class="dic-btn">자세히 보기</a>
+                                                                    <div class="model-link">
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>견적내기</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>시승신청</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    <div class="model-text">
+                                                                        <strong>G90</strong>
+                                                                        <p>LONG WHEEL BASE</p>
+                                                                    </div>
+                                                                    <img src="./images/g90.png" alt="g90">
+                                                                    <a href="#" class="dic-btn">자세히 보기</a>
+                                                                    <div class="model-link">
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>견적내기</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>시승신청</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    <div class="model-text">
+                                                                        <strong>G90</strong>
+                                                                        <p>LONG WHEEL BASE</p>
+                                                                    </div>
+                                                                    <img src="./images/G80.png" alt="g90">
+                                                                    <a href="#" class="dic-btn">자세히 보기</a>
+                                                                    <div class="model-link">
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>견적내기</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>시승신청</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    <div class="model-text">
+                                                                        <strong>G90</strong>
+                                                                        <p>LONG WHEEL BASE</p>
+                                                                    </div>
+                                                                    <img src="./images/GV70.png" alt="g90">
+                                                                    <a href="#" class="dic-btn">자세히 보기</a>
+                                                                    <div class="model-link">
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>견적내기</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>시승신청</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                    
+                                                                </li>
+                                                            </ul>
+                                                        </div><!--swiper-slide-->
+                                                    </div><!--swiper-wrapper-->
+                                                    <div class="swiper-button-prev"></div>
+                                                    <div class="swiper-button-next"></div>
+                                                </div><!--swiper-container-->
+                                            </div>
+                                        </div>
+
+                                        <div class="subMenu-right-model subMenu-right-item suv">
+                                            <div class="subMenu-item">
+                                                <!--swiper-->
+                                                <div class="swiper-container">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <ul>
+                                                                <li>
+                                                                    <div class="model-text">
+                                                                        <strong>G90</strong>
+                                                                        <p>LONG WHEEL BASE</p>
+                                                                    </div>
+                                                                    <img src="./images/GV70.png" alt="g90">
+                                                                    <a href="#" class="dic-btn">자세히 보기</a>
+                                                                    <div class="model-link">
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>견적내기</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>시승신청</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    <div class="model-text">
+                                                                        <strong>G90</strong>
+                                                                        <p>LONG WHEEL BASE</p>
+                                                                    </div>
+                                                                    <img src="./images/g90.png" alt="g90">
+                                                                    <a href="#" class="dic-btn">자세히 보기</a>
+                                                                    <div class="model-link">
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>견적내기</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>시승신청</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    <div class="model-text">
+                                                                        <strong>GV70</strong>
+                                                                        <p>LONG WHEEL BASE</p>
+                                                                    </div>
+                                                                    <img src="./images/GV70.png" alt="g90">
+                                                                    <a href="#" class="dic-btn">자세히 보기</a>
+                                                                    <div class="model-link">
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>견적내기</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>시승신청</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    <div class="model-text">
+                                                                        <strong>G90</strong>
+                                                                        <p>LONG WHEEL BASE</p>
+                                                                    </div>
+                                                                    <img src="./images/GV80.png" alt="g90">
+                                                                    <a href="#" class="dic-btn">자세히 보기</a>
+                                                                    <div class="model-link">
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>견적내기</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>시승신청</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    <div class="model-text">
+                                                                        <strong>GV60</strong>
+                                                                        <p>LONG WHEEL BASE</p>
+                                                                    </div>
+                                                                    <img src="./images/GV60.png" alt="g90">
+                                                                    <a href="#" class="dic-btn">자세히 보기</a>
+                                                                    <div class="model-link">
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>견적내기</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                        <a href="#" class="link-text-btn">
+                                                                            <span>시승신청</span>
+                                                                            <i class="bx bx-chevron-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                    
+                                                                </li>
+                                                                
+                                                            </ul>
+                                                        </div><!--swiper-slide-->
+                                                    </div><!--swiper-wrapper-->
+                                                    <div class="swiper-button-prev"></div>
+                                                    <div class="swiper-button-next"></div>
+                                                </div><!--swiper-container-->
+                                            </div>
+                                        </div>
+                                    </div><!--right-->
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" title="대메뉴">구매</a>
+                        <div class="subMenu-wrapper">
+                            <div class="subMenu-inner inner">
+                                <div class="subMenu subMenu-link">
+                                    <div class="subMenu-left">
+                                        <strong>구매</strong>
+                                        <p>당신만의 제네시스를 찾아가는<br>
+                                            여정을 지원합니다.</p>
+                                    </div>
+                                    <div class="subMenu-right">
+                                        <ul class="subMenu-right-menu subMenu-right-item">
+                                            <li>
+                                                <a href="#" class="link-text-btn">
+                                                    <span>견적내기</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="link-text-btn">
+                                                    <span>전기차 구매 가이드</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="link-text-btn">
+                                                    <span>구매 상담 신청</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="link-text-btn">
+                                                    <span>제네시스 스펙트럼</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="link-text-btn">
+                                                    <span>사양 조회하기</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div><!--subMenu-->
+                            </div><!--inner-->
+                            <div class="subMenu-bottom">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="link-text-btn">
+                                            <span>시승신청</span>
+                                            <i class="bx bx-chevron-right"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link-text-btn">
+                                            <span>전시장 찾기</span>
+                                            <i class="bx bx-chevron-right"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link-text-btn">
+                                            <span>멤버십소개</span>
+                                            <i class="bx bx-chevron-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!--subMenu-wrapper-->
+                    </li>
                     <li><a href="#" title="대메뉴">체험</a></li>
                     <li><a href="#" title="대메뉴">멤버스</a></li>
                     <li><a href="#" title="대메뉴">제네시스</a></li>
@@ -42,27 +601,51 @@
                     <span class="text">마이페이지</span>
                     <img src="./images/genesis-kr-gnb-mypage-icon-01-tablet-34x38-ko.png"
                     alt="마이페이지" class="tablet">
-                </a>
+                </a>   
+            </div> <!--support-menu-->
 
+            <div class="search-wrapper">
                 <a href="#" class="search-btn">
                     <span class="blind">검색하기 버튼</span>
                     <img src="./images/icon-search-small.png">
-                </a>
-            </div> <!--support-menu-->
-            <a href="#" class="ham-btn">
-                <div>
-                    <i class="line01"></i>
-                    <i class="line02"></i>
-                    <span class="blind">전체메뉴버튼</span>
+                </a><!--열리는버튼??-->
+                <div class="search-item">
+                    <div class="search-inner">
+                        <input type="text" value="">
+                        <button class="search-btn">
+                            <span class="blind">검색하기 버튼</span>
+                            <img src="./images/icon-search-small.png">
+                        </button>
+                    </div>
                 </div>
-            </a>
-        </div>
+            </div><!--search-wrapper-->
+
+            <div class="sitemap-wrapper">
+                <a href="#" class="ham-btn">
+                    <div>
+                        <i class="line01"></i>
+                        <i class="line02"></i>
+                        <span class="blind">전체메뉴버튼</span>
+                    </div>
+                </a>
+
+                <div class="sitemap">
+                    <div class="sitemap-inner">
+                        <!--내용은 나중에 넣을 것-->
+                    </div>
+                </div>
+
+            </div><!--sitemap-wrapper-->
+
+        </div><!--inner-->
     </header>
     <!--header-->
 
     <main class="container" id="content">
+
         <section class="visual-wrapper">
-            <div class="visual-item">
+            
+            <!--<div class="visual-item">
                 <img src="./images/main-visual01.jpg" alt="자동차" class="pc">
                 <img src="./images/visual01-mobile.jpg" alt="자동차" class="mobile">
                 <div class="visual-text">
@@ -77,9 +660,8 @@
                         <a href="#" title="상세 페이지 바로가기" class="link-text-btn"><span>견적내기</span><i class='bx bx-chevron-right'></i></a>
                     </div>
                 </div>
-            </div> <!--visual-item-->
-
-            <div class="visual-controls">
+            </div> -->
+            <!--<div class="visual-controls">
                 <ul class="dot-list">
                     <li class="on"></li>
                     <li></li>
@@ -92,7 +674,7 @@
                     <li></li>
                     <li></li>
                 </ul>
-                <button class="pause-btn"> <!-- hover시(클릭이벤트 넣을 수 없ㅇ어서) -->
+                <button class="pause-btn">  hover시(클릭이벤트 넣을 수 없ㅇ어서) 
                     <i class='bx bx-play'>
                         <span class="blind">슬라이드 자동 시작 버튼</span>
                     </i>
@@ -100,7 +682,254 @@
                         <span class="blind">슬라이드 자동 일시정지 버튼</span>
                     </i>
                 </button>
-            </div>
+            </div>-->
+        
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/main-visual01.jpg" alt="자동차" class="pc">
+                        <img src="./images/visual01-mobile.jpg" alt="자동차" class="mobile">
+                        <div class="visual-text">
+                            <div class="visual-inner">
+                                <div class="title-box">
+                                    <p class="sub-text">GENESIS</p>
+                                    <h2 class="title">G80</h2>
+                                    <p class="sub-text">2023년형 출시</p>
+                                </div>
+                            </div><!--visual-inner-->
+                            <div class="link-box">
+                                <a href="#" title="상세페이지" class="link-text-btn">
+                                    <span>더 알아보기</span>
+                                    <i class=" bx bx-chevron-right"></i>
+                                </a>
+                                <a href="#" title="상세페이지" class="link-text-btn">
+                                    <span>견적내기</span>
+                                    <i class=" bx bx-chevron-right"></i>
+                                </a>
+                            </div><!--link-box-->
+                        </div><!--visual-text-->
+                    </div><!--swiper-slide-->
+                    <div class="swiper-slide">
+                        <img src="./images/main-visual01.jpg" alt="자동차" class="pc">
+                        <img src="./images/visual01-mobile.jpg" alt="자동차" class="mobile">
+                        <div class="visual-text">
+                            <div class="visual-inner">
+                                <div class="title-box">
+                                    <p class="sub-text">GENESIS</p>
+                                    <h2 class="title">G80</h2>
+                                    <p class="sub-text">2023년형 출시</p>
+                                </div>
+                            </div><!--visual-inner-->
+                            <div class="link-box">
+                                <a href="#" title="상세페이지" class="link-text-btn">
+                                    <span>더 알아보기</span>
+                                    <i class="bx bx-chevron-right"></i>
+                                </a>
+                                <a href="#" title="상세페이지" class="link-text-btn">
+                                    <span>견적내기</span>
+                                    <i class="bx bx-chevron-right"></i>
+                                </a>
+                            </div><!--link-box-->
+                        </div><!--visual-text-->
+                    </div><!--swiper-slide-->
+                    <div class="swiper-slide">
+                        <img src="./images/main-visual01.jpg" alt="자동차" class="pc">
+                        <img src="./images/visual01-mobile.jpg" alt="자동차" class="mobile">
+                        <div class="visual-text">
+                            <div class="visual-inner">
+                                <div class="title-box">
+                                    <p class="sub-text">GENESIS</p>
+                                    <h2 class="title">G80</h2>
+                                    <p class="sub-text">2023년형 출시</p>
+                                </div>
+                            </div><!--visual-inner-->
+                            <div class="link-box">
+                                <a href="#" title="상세페이지" class="link-text-btn">
+                                    <span>더 알아보기</span>
+                                    <i class="bx bx-chevron-right"></i>
+                                </a>
+                                <a href="#" title="상세페이지" class="link-text-btn">
+                                    <span>견적내기</span>
+                                    <i class="bx bx-chevron-right"></i>
+                                </a>
+                            </div><!--link-box-->
+                        </div><!--visual-text-->
+                    </div><!--swiper-slide-->
+                    <div class="swiper-slide">
+                        <img src="./images/main-visual01.jpg" alt="자동차" class="pc">
+                        <img src="./images/visual01-mobile.jpg" alt="자동차" class="mobile">
+                        <div class="visual-text">
+                            <div class="visual-inner">
+                                <div class="title-box">
+                                    <p class="sub-text">GENESIS</p>
+                                    <h2 class="title">G80</h2>
+                                    <p class="sub-text">2023년형 출시</p>
+                                </div>
+                            </div><!--visual-inner-->
+                            <div class="link-box">
+                                <a href="#" title="상세페이지" class="link-text-btn">
+                                    <span>더 알아보기</span>
+                                    <i class=" bx bx-chevron-right"></i>
+                                </a>
+                                <a href="#" title="상세페이지" class="link-text-btn">
+                                    <span>견적내기</span>
+                                    <i class="bx bx-chevron-right"></i>
+                                </a>
+                            </div><!--link-box-->
+                        </div><!--visual-text-->
+                    </div><!--swiper-slide-->
+                    <div class="swiper-slide">
+                        <img src="./images/main-visual01.jpg" alt="자동차" class="pc">
+                        <img src="./images/visual01-mobile.jpg" alt="자동차" class="mobile">
+                        <div class="visual-text">
+                            <div class="visual-inner">
+                                <div class="title-box">
+                                    <p class="sub-text">GENESIS</p>
+                                    <h2 class="title">G80</h2>
+                                    <p class="sub-text">2023년형 출시</p>
+                                </div>
+                            </div><!--visual-inner-->
+                            <div class="link-box">
+                                <a href="#" title="상세페이지" class="link-text-btn">
+                                    <span>더 알아보기</span>
+                                    <i class="bx bx-chevron-right"></i>
+                                </a>
+                                <a href="#" title="상세페이지" class="link-text-btn">
+                                    <span>견적내기</span>
+                                    <i class=" bx bx-chevron-right"></i>
+                                </a>
+                            </div><!--link-box-->
+                        </div><!--visual-text-->
+                    </div><!--swiper-slide-->
+                    <div class="swiper-slide">
+                        <img src="./images/main-visual01.jpg" alt="자동차" class="pc">
+                        <img src="./images/visual01-mobile.jpg" alt="자동차" class="mobile">
+                        <div class="visual-text">
+                            <div class="visual-inner">
+                                <div class="title-box">
+                                    <p class="sub-text">GENESIS</p>
+                                    <h2 class="title">G80</h2>
+                                    <p class="sub-text">2023년형 출시</p>
+                                </div>
+                            </div><!--visual-inner-->
+                            <div class="link-box">
+                                <a href="#" title="상세페이지" class="link-text-btn">
+                                    <span>더 알아보기</span>
+                                    <i class=" bx bx-chevron-right"></i>
+                                </a>
+                                <a href="#" title="상세페이지" class="link-text-btn">
+                                    <span>견적내기</span>
+                                    <i class=" bx bx-chevron-right"></i>
+                                </a>
+                            </div><!--link-box-->
+                        </div><!--visual-text-->
+                    </div><!--swiper-slide-->
+                    <div class="swiper-slide">
+                        <img src="./images/main-visual01.jpg" alt="자동차" class="pc">
+                        <img src="./images/visual01-mobile.jpg" alt="자동차" class="mobile">
+                        <div class="visual-text">
+                            <div class="visual-inner">
+                                <div class="title-box">
+                                    <p class="sub-text">GENESIS</p>
+                                    <h2 class="title">G80</h2>
+                                    <p class="sub-text">2023년형 출시</p>
+                                </div>
+                            </div><!--visual-inner-->
+                            <div class="link-box">
+                                <a href="#" title="상세페이지" class="link-text-btn">
+                                    <span>더 알아보기</span>
+                                    <i class="bx bx-chevron-right"></i>
+                                </a>
+                                <a href="#" title="상세페이지" class="link-text-btn">
+                                    <span>견적내기</span>
+                                    <i class="bx bx-chevron-right"></i>
+                                </a>
+                            </div><!--link-box-->
+                        </div><!--visual-text-->
+                    </div><!--swiper-slide-->
+                    <div class="swiper-slide">
+                        <img src="./images/main-visual01.jpg" alt="자동차" class="pc">
+                        <img src="./images/visual01-mobile.jpg" alt="자동차" class="mobile">
+                        <div class="visual-text">
+                            <div class="visual-inner">
+                                <div class="title-box">
+                                    <p class="sub-text">GENESIS</p>
+                                    <h2 class="title">G80</h2>
+                                    <p class="sub-text">2023년형 출시</p>
+                                </div>
+                            </div><!--visual-inner-->
+                            <div class="link-box">
+                                <a href="#" title="상세페이지" class="link-text-btn">
+                                    <span>더 알아보기</span>
+                                    <i class="bx bx-chevron-right"></i>
+                                </a>
+                                <a href="#" title="상세페이지" class="link-text-btn">
+                                    <span>견적내기</span>
+                                    <i class="bx bx-chevron-right"></i>
+                                </a>
+                            </div><!--link-box-->
+                        </div><!--visual-text-->
+                    </div><!--swiper-slide-->
+                    <div class="swiper-slide">
+                        <img src="./images/main-visual01.jpg" alt="자동차" class="pc">
+                        <img src="./images/visual01-mobile.jpg" alt="자동차" class="mobile">
+                        <div class="visual-text">
+                            <div class="visual-inner">
+                                <div class="title-box">
+                                    <p class="sub-text">GENESIS</p>
+                                    <h2 class="title">G80</h2>
+                                    <p class="sub-text">2023년형 출시</p>
+                                </div>
+                            </div><!--visual-inner-->
+                            <div class="link-box">
+                                <a href="#" title="상세페이지" class="link-text-btn">
+                                    <span>더 알아보기</span>
+                                    <i class=" bx bx-chevron-right"></i>
+                                </a>
+                                <a href="#" title="상세페이지" class="link-text-btn">
+                                    <span>견적내기</span>
+                                    <i class="bx bx-chevron-right"></i>
+                                </a>
+                            </div><!--link-box-->
+                        </div><!--visual-text-->
+                    </div><!--swiper-slide-->
+                    <div class="swiper-slide">
+                        <img src="./images/main-visual01.jpg" alt="자동차" class="pc">
+                        <img src="./images/visual01-mobile.jpg" alt="자동차" class="mobile">
+                        <div class="visual-text">
+                            <div class="visual-inner">
+                                <div class="title-box">
+                                    <p class="sub-text">GENESIS</p>
+                                    <h2 class="title">G80</h2>
+                                    <p class="sub-text">2023년형 출시</p>
+                                </div>
+                            </div><!--visual-inner-->
+                            <div class="link-box">
+                                <a href="#" title="상세페이지" class="link-text-btn">
+                                    <span>더 알아보기</span>
+                                    <i class="bx bx-chevron-right"></i>
+                                </a>
+                                <a href="#" title="상세페이지" class="link-text-btn">
+                                    <span>견적내기</span>
+                                    <i class="bx bx-chevron-right"></i>
+                                </a>
+                            </div><!--link-box-->
+                        </div><!--visual-text-->
+                    </div><!--swiper-slide-->
+                </div><!--swiper-wrapper-->
+                <div class="visual-controls">
+                    <div class="swiper-pagination"></div>
+                    <button class="pause-btn"> 
+                        <i class='bx bx-play'>
+                            <span class="blind">슬라이드 자동 시작 버튼</span>
+                        </i>
+                        <i class='bx bx-pause'>
+                            <span class="blind">슬라이드 자동 일시정지 버튼</span>
+                        </i>
+                    </button>
+                </div>
+            </div><!--swiper-container-->
+
         </section>
         <!--visual-->
 

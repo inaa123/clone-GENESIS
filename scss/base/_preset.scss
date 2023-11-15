@@ -84,6 +84,14 @@ body, html{
     }
 }
 
+.slide-up{ //위로 올라간다. 슬라이드다운은 아래로 내려간다.
+    transition: max-height 600ms, opacity 300ms; //올라가는 시간이 0.6초
+    overflow:hidden;
+}
+.slide-down{
+    transition: max-height 600ms, opacity 300ms; //내려가는 시간이0.6초
+}
+
 .mobile {
     display: none;
 }
