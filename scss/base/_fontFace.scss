@@ -1,0 +1,26 @@
+@font-face{
+    font-family: 'genesis-head-light';
+    src: url('../../fonts/GenesisSansHeadKRLight.eot'); //익스에서 우선 적용하고 익스가 아닌경우 나머지를 넣는 거기 때문에 src를 따로 넣는다.
+    src: url('../../fonts/GenesisSansHeadKRLight.eot#iefix') format('embededopentype'),
+        url('../../fonts/GenesisSansHeadKRLight.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face{
+    font-family: 'genesis-head';
+    src: url('../../fonts/GenesisSansHeadKRRegular.eot');
+    src: url('../../fonts/GenesisSansHeadKRRegular.eot#iefix') format('embededopnentype'),
+        url('../../fonts/GenesisSansHeadKRLight.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 300;
+ }
+
+ @font-face{
+    font-family: 'genesis-text';
+    src: url('../../fonts/GenesisSansTextKRRegular.eot');
+    src: url('../../fonts/GenesisSansTextKRRegular.eot#iefix') format('embededopentype'),
+        url('../../fonts/GenesisSansTextKRRegular.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 300;
+ }

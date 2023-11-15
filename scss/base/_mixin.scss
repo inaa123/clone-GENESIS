@@ -1,0 +1,113 @@
+@mixin ellipse($lineHeight: 10px, $line : 1) { //floatX(clearefix X) FLEX사용.
+    overflow: hidden;
+    text-overflow: ellipsis;
+    @if($line > 1) {
+        display: -webkit-box;
+        -webkit-line-clamp: $line;
+        -webkit-box-orient: vertical;
+        line-height: $lineHeight;
+        max-height: $lineHeight * $line;
+    }@else {
+        white-space: nowrap;
+    }
+}
+
+@mixin linkBtn($color : $white, $type : 'v1'){
+    color: $color;
+    font-size: 16px;
+    //display: flex;
+    display: inline-flex;
+    gap: 6px;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    /* 필요없음 ! 
+    &:after{
+        content: "";
+        width: 7px;
+        height: 12px;
+        display: block;
+        //background: url('../../images/ico-arrow-white.png') no-repeat center center / 7px; => background로 버튼의 > 처리하니 이미지로 고정되어 나중에 색 변경이 X, 그래서 그냥 HTML파일에 <I>아이콘 넣을것
+        transform : rotate(180deg);
+    }*/
+    span{
+        display: block;
+        width: 100%;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        &:after{
+            content: "";
+            width: 0%;
+            height: 1px;
+            background: $color;
+            display: block;
+            position: absolute;
+            left: 0px;
+            bottom: -6px;
+            //transition: 500ms; 양방향으로 
+        }
+        &:hover{
+            &:after{
+                transition: 500ms; //hover할때만 
+                width: 100%;
+            }
+        }
+        @if $type == 'v2'{
+            &:before{
+                content: "";
+                height: 1px;
+                width: 100%;
+                background: $color;
+                position: absolute;
+                left: 0px;
+                bottom: -6px;
+            }
+            &:hover:before{
+                display: none;
+            }
+        }
+    }
+}
+
+//분기점?으로
+$laptop : 1600px;
+$laptop02 : 1360px;
+$tablet : 1024px;
+$mobile : 768px;
+
+.link-box{
+    .link-text-btn{
+        &.v2{
+            @include linkBtn($white, 'v2');
+        }   
+    }
+}
+
+//@content : 선언된 mixin안에 새로운 스타일을 적용할 때 사용하는 기법이다.
+//기존 mixin이 가지고 있는 스타일 외에 선택자나 속성 등을 새로 추가할 때
+@mixin laptop{
+    @media screen and (max-width : $laptop){
+        //값을 미리 불러올 수 없다.
+        @content;
+    }
+};
+
+@mixin laptop02{
+    @media screen and (max-width : $laptop02) {
+        @content;
+    }
+};
+
+@mixin tablet{
+    @media screen and (max-width : $tablet) {
+        @content;
+    }
+};
+
+@mixin mobile{
+    @media screen and (max-width : $mobile) {
+        @content;
+    }
+};

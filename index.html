@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genesis</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!--box-icons페이지 - usage - import CSS - 링크 복사-->
+</head>
+<body>
+    <ul class="skip-menu">
+        <li><a href="#" title="상단 컨텐츠 바로 가기 메뉴">상단컨텐츠</a></li>
+        <li><a href="#" title="메인 컨텐츠 바로 가기 메뉴">메인 컨텐츠</a></li>
+        <li><a href="#" title="하단 컨텐츠 바로 가기 메뉴">하단 컨텐츠</a></li>
+    </ul>
+
+    <header class="h-container" id="header">
+        <div class="inner">
+            <h1 class="logo">
+                <a href="#" title="홈으로 이동">
+                    <img src="./images/logo.png" alt="브랜드">
+                </a>
+            </h1>
+            <nav class="gnb pc">
+                <ul class="gnb-list">
+                    <li><a href="#" title="대메뉴">모델</a></li>
+                    <li><a href="#" title="대메뉴">구매</a></li>
+                    <li><a href="#" title="대메뉴">체험</a></li>
+                    <li><a href="#" title="대메뉴">멤버스</a></li>
+                    <li><a href="#" title="대메뉴">제네시스</a></li>
+                </ul>
+            </nav>
+
+            <div class="support-menu">
+                <a href="#" class="sup-link">
+                    <span class="text">고객센터</span> <!--텍스트 -> 아이콘 -> 없애기-->
+                    <img src="./images/genesis-kr-gnb-support-icon-01-tablet-17x17-ko.png"
+                    alt="고객센터" class="tablet">
+                </a>
+
+                <a href="#" class="my-link">
+                    <span class="text">마이페이지</span>
+                    <img src="./images/genesis-kr-gnb-mypage-icon-01-tablet-34x38-ko.png"
+                    alt="마이페이지" class="tablet">
+                </a>
+
+                <a href="#" class="search-btn">
+                    <span class="blind">검색하기 버튼</span>
+                    <img src="./images/icon-search-small.png">
+                </a>
+            </div> <!--support-menu-->
+            <a href="#" class="ham-btn">
+                <div>
+                    <i class="line01"></i>
+                    <i class="line02"></i>
+                    <span class="blind">전체메뉴버튼</span>
+                </div>
+            </a>
+        </div>
+    </header>
+    <!--header-->
+
+    <main class="container" id="content">
+        <section class="visual-wrapper">
+            <div class="visual-item">
+                <img src="./images/main-visual01.jpg" alt="자동차" class="pc">
+                <img src="./images/visual01-mobile.jpg" alt="자동차" class="mobile">
+                <div class="visual-text">
+                    <div class="title-box">
+                        <p class="sub-text">GENESIS</p>
+                        <h2 class="title">G80</h2>
+                        <p class="sub-text">2024년형 출시</p>
+                    </div>
+
+                    <div class="link-box">
+                        <a href="#" title="상세 페이지 바로가기" class="link-text-btn"><span>더 알아보기</span><i class='bx bx-chevron-right' ></i></a>
+                        <a href="#" title="상세 페이지 바로가기" class="link-text-btn"><span>견적내기</span><i class='bx bx-chevron-right'></i></a>
+                    </div>
+                </div>
+            </div> <!--visual-item-->
+
+            <div class="visual-controls">
+                <ul class="dot-list">
+                    <li class="on"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li class="on"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <button class="pause-btn"> <!-- hover시(클릭이벤트 넣을 수 없ㅇ어서) -->
+                    <i class='bx bx-play'>
+                        <span class="blind">슬라이드 자동 시작 버튼</span>
+                    </i>
+                    <i class='bx bx-pause'>
+                        <span class="blind">슬라이드 자동 일시정지 버튼</span>
+                    </i>
+                </button>
+            </div>
+        </section>
+        <!--visual-->
+
+        <section class="model-wrapper">
+            <div class="inner">
+                <div class="title-box">
+                    <h2 class="title">OUR MODELS</h2>
+                    <p class="text">
+                        역동적이면서도 우아한 디자인과 최첨단 기술을 탑재한 제네시스 브랜드의 라인업을 살펴보세요.
+                    </p>
+                </div>
+                <!--title-box-->
+
+                <div class="category pc">
+                    <a href="#" title="제네시스 카테고리 선택">ALL</a>
+                </div>
+                <div class="category-m mobile">
+                    <ul class="category-list">
+                        <li class="on"><a href="#">ALL</a></li>
+                        <li><a href="#">SEDAN</a></li>
+                        <li><a href="#">SUV</a></li>
+                    </ul>
+                </div>
+
+                <div class="model-list-wrapper">
+                    <ul class="model-list">
+                        <li class="under ev">
+                            <div class="content-box">
+                                <p class="text">LONG WHEEL BASE</p>
+                                <h3 class="title">G90</h3>
+                                <div class="icon-list">
+                                    <img src="./images/EV.png" alt="전동화 모델" class="icon-ev">
+                                    <img src="./images/new.png" alt="신형 모델" class="icon-new">
+                                </div>
+                            </div>
+                            <img src="./images/g90.png" alt="제네시스 G90 롱 휠 베이스">
+
+                            <a href="#" title="상세 페이지 이동" class="dic-btn">자세히 보기</a>
+                        </li>
+
+                        <li>
+                            <div class="content-box">
+                                <p class="text">LONG WHEEL BASE</p>
+                                <h3 class="title">G90</h3>
+                                <div class="icon-list">
+                                    <img src="./images/EV.png" alt="전동화 모델" class="icon-ev">
+                                    <img src="./images/new.png" alt="신형 모델" class="icon-new">
+                                </div>
+                            </div>
+                            <img src="./images/g90.png" alt="제네시스 G90 롱 휠 베이스">
+
+                            <a href="#" title="상세 페이지 이동" class="dic-btn">자세히 보기</a>
+                        </li>
+
+                        <li>
+                            <div class="content-box">
+                                <p class="text">LONG WHEEL BASE</p>
+                                <h3 class="title">G90</h3>
+                                <div class="icon-list">
+                                    <img src="./images/EV.png" alt="전동화 모델" class="icon-ev">
+                                    <img src="./images/new.png" alt="신형 모델" class="icon-new">
+                                </div> 
+                            </div>
+                            <img src="./images/g90.png" alt="제네시스 G90 롱 휠 베이스">
+
+                            <a href="#" title="상세 페이지 이동" class="dic-btn">자세히 보기</a>
+                            <!--버튼 자주사용할거같으니 preset에 만들어준다.-->
+                        </li>
+
+                    </ul>
+
+                    <div class="model-dot-wrapper">
+                        <ul class="model-dot-list">
+                            <li class="on"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+        </section>
+
+        <section class="icon-wrapper">
+            <div class="inner">
+                <h2 class="blind">서비스 문의</h2>
+                <ul class="icon-list">
+                    <li>
+                        <a href="#" class="icon-qui">
+                            <span>견적 내기</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="icon-sales">
+                            <span>구매 상담 신청</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="icon-drive">
+                            <span>시승 신청</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="icon-catalog">
+                            <span>카탈로그</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="award-wrapper">
+            <div class="title-box">
+                <h2 class="title">THE AWARD</h2>
+            </div>
+            <div class="award-item">
+                <div class="award-list">
+                    <img src="./images/awards01.jpg" alt="이미지 설명">
+                </div><!--list-->
+                <div class="award-dot">
+                    <ul class="award-dot-list">
+                        <li><a href="#">2023 CAR DESIGN AWARD</a></li>
+                        <li><a href="#" >2023 RED DOT DESIGN AWARD</a></li>
+                        <li><a href="#" >2023 MOTORTREND CAR OF THE YEAR</a></li>
+                        <li><a href="#" >2022 RED DOT AWARDS</a></li>
+                        <li><a href="#" >J.D POWER 2022 U.S INTIAL QUALITY STUDY</a></li>
+                        <li><a href="#">2022 IIHS TOP SAFETY PICK+</a></li>
+                    </ul>
+
+                    <button class="pause-btn pc">
+                        <span class="blind">재생 일시정지 버튼</span>
+                    </button>
+                </div><!--dot-->
+                <div class="text-box">
+                    <h3 class="content-title">
+                        제네시스 X 컨버터블<br>
+                        카 디자인 어워드 올해의 컨셉트카 선정
+                    </h3>
+                    <p class="content-text">
+                        제네시스 브랜드 최초의 컨터버블 콘셉트인 엑스 컨버터블이 이탈리아의 자동차 및 산업 디자인 전문지 '오토 앤드 디자인(Auto&desing)'에서 주최하는 '카 디자인 어워드 2023' 에서 '올해의 콘셉트카'로 선정되며 디자인 우수성을 인정받았습니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="option-wrapper">
+            <div class="opt-list">
+                <div class="opt-item space">
+                    <div class="text-box">
+                        <h2 class="title">스페이스</h2>
+                        <p class="text">
+                            제네시스의 디자인과 고유한 감각을 반영한 현대적 공간으로 여러분을 초대합니다.
+                            제네시스에 관한 다양한 체험으로 당신만의 제네시스를 찾는 여정을 지원합니다.
+                        </p>
+
+                        <div class="link-box">
+                            <a href="#" class="link-text-btn v2">
+                                <span>자세히 보기</span>
+                                <i class='bx bx-chevron-right'></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="opt-item trip">
+                    <div class="text-box">
+                        <h2 class="title">로드트립</h2>
+                        <p class="text">
+                            제네시스와 내셔널지오그래픽 트래블러와 함께하는 서사적 여행, 
+                            제네시스로드트립을 통해 자세한 정보를 확인하세요.
+                        </p>
+
+                        <div class="link-box">
+                            <a href="#" class="link-text-btn v2">
+                                <span>자세히 보기</span>
+                                <i class='bx bx-chevron-right'></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="event-wrapper">
+            <div class="text-box">
+                <h2 class="title">GENESIS EVENTS</h2>
+                <p class="text">제네시스에서 진행중인 다양한 이벤트를 소개합니다.</p>
+                <a href="#" class="dic-btn">이벤트 보기</a>
+            </div>
+        </section>
+
+        <section class="sns-wrapper">
+            <div class="title-box">
+                <p class="sub-title">INSTAGRAM</p>
+                <h2 class="title">EXPERIENCE GENESIS</h2>
+            </div>
+            <ul class="sns-list">
+                <li> <!--이미지 hover시 이미지 커지고.. 등등 영역을 감싸는 애들 ..-->
+                    <div class="sns-img">
+                        <img src="./images/sns1.jpg" alt="이미지">
+                    </div>
+                    <div class="text-box">
+                        <i class='bx bxl-instagram-alt'></i>
+                        <p class="text">
+                            A masterful display of precision and power, from opening drive, all the way through to a thrilling sudden-death playoff and final title-winning shot.
+                            Congratulations, 2023 Genesis Championship winner Sang Hyun Park and caddie, Dong Yeon Lee.
+                            Join Genesis and the remarkable winning duo as we boldly continue along this journey of excellence.
+                            #Genesis #제네시스 #GenesisChampionship #Golf
+                        </p>
+                        <div class="link-box">
+                            <a href="#" title="페이지 바로가기" class="link-text-btn v2">
+                                <span>See more</span>
+                                <i class='bx bx-link-external' ></i>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="sns-img">
+                        <img src="./images/sns2.jpg" alt="이미지">
+                    </div>
+                    <div class="text-box">
+                        <i class='bx bxl-instagram-alt'></i>
+                        <p class="text">
+                            A masterful display of precision and power, from opening drive, all the way through to a thrilling sudden-death playoff and final title-winning shot.
+                            Congratulations, 2023 Genesis Championship winner Sang Hyun Park and caddie, Dong Yeon Lee.
+                            Join Genesis and the remarkable winning duo as we boldly continue along this journey of excellence.
+                            #Genesis #제네시스 #GenesisChampionship #Golf
+                        </p>
+                        <div class="link-box">
+                            <a href="#" title="페이지 바로가기" class="link-text-btn v2">
+                                <span>See more</span>
+                                <i class='bx bx-link-external' ></i>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="sns-img">
+                        <img src="./images/sns3.jpg" alt="이미지">
+                    </div>
+                    <div class="text-box">
+                        <i class='bx bxl-instagram-alt'></i>
+                        <p class="text">
+                            A masterful display of precision and power, from opening drive, all the way through to a thrilling sudden-death playoff and final title-winning shot.
+                            Congratulations, 2023 Genesis Championship winner Sang Hyun Park and caddie, Dong Yeon Lee.
+                            Join Genesis and the remarkable winning duo as we boldly continue along this journey of excellence.
+                            #Genesis #제네시스 #GenesisChampionship #Golf
+                        </p>
+                        <div class="link-box">
+                            <a href="#" title="페이지 바로가기" class="link-text-btn v2">
+                                <span>See more</span>
+                                <i class='bx bx-link-external' ></i>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+            <a href="#" title="상세 페이지 이동" class="dic-btn">
+                <span>더 보기</span>
+                <i class='bx bx-plus'></i>
+            </a>
+        </section>
+
+        <section class="more-wrapper">
+            <div class="inner">
+                <div class="title-box">
+                    <h2 class="title">연관 컨텐츠</h2>
+                </div>
+
+                <ul class="more-list">
+                    <li>
+                        <div class="more-img">
+                            <img src="./images/more-event.jpg" alt="이벤트 컨텐츠">
+                        </div>
+                        <div class="text-box">
+                            <h3 class="title">이벤트</h3>
+                            <p class="text">
+                                제네시스에서 진행중인 다양한 이벤트 정보를 전해 드립니다.
+                            </p>
+                            <div class="link-box">
+                                <a href="#" class="link-text-btn v2">
+                                    <span>자세히 보기</span>
+                                    <i class='bx bx-chevron-right' ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="more-img">
+                            <img src="./images/mode-digital.jpg" alt="이벤트 컨텐츠">
+                        </div>
+                        <div class="text-box">
+                            <h3 class="title">MY GENESIS앱</h3>
+                            <p class="text">
+                                제네시스 고객님의 일상에 편의를 더해줄 MY GENESIS앱과 함께하세요.
+                            </p>
+                            <div class="link-box">
+                                <a href="#" class="link-text-btn v2">
+                                    <span>자세히 보기</span>
+                                    <i class='bx bx-chevron-right'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="more-img">
+                            <img src="./images/more-members.jpg" alt="이벤트 컨텐츠">
+                        </div>
+                        <div class="text-box">
+                            <h3 class="title">멤버스</h3>
+                            <p class="text">
+                                제네시스 오너분들께만 주어지는 특별한 혜택과 이상적인 경험을 선사합니다.
+                            </p>
+                            <div class="link-box">
+                                <a href="#" class="link-text-btn v2">
+                                    <span>자세히 보기</span>
+                                    <i class='bx bx-chevron-right'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+    </main>
+    <!--main-->
+
+    <footer class="f-container" id="footer">
+        <!--footer안에 div가 6군데-->
+        <div class="f-sns">
+            <div class="inner"> <!--inner가 한군데씩 들어간다.-->
+                <div class="f-sns-left">
+                    <span class="pc">Share</span>
+                    <ul class="f-sns-list pc">
+                        <li>
+                            <a href="#" title="링크이동">
+                                <i class='bx bxl-facebook'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="링크이동">
+                                <i class='bx bxl-twitter'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="링크이동">
+                                <i class='bx bx-link'></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="f-sns-btn mobile">
+                        <i class='bx bxs-share bx-flip-horizontal' ></i>
+                        <span class="blind">sns목록 열기 버튼</span>
+                    </button>
+                </div>
+                <button class="f-top-btn">
+                    Top
+                    <i class='bx bx-chevron-up'></i>
+                </button>
+            </div>
+        </div>
+        <div class="f-notice">
+            <div class="inner">
+                <div class="f-notice-list">
+                    <a href="#" title="링크이동">
+                        [공지 사항] Genesis Connected Service 개인정보 처리방침 개정 공지
+                    </a>
+                </div>
+            
+                <div class="f-notice-controls">
+                    <button class="prev-btn">
+                        <i class='bx bx-chevron-left'></i>
+                        <span class="blind">이전 컨텐츠 보기 버튼</span>
+                    </button>
+                    <button class="pause-btn">
+                        <i class='bx bx-pause'></i>
+                        <span class="blind">정지 버튼</span>
+                    </button>
+                    <button class="next-btn">
+                        <i class='bx bx-chevron-right'></i>
+                        <span class="blind">다음 컨텐츠 보기 버튼</span>
+                    </button>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="f-sitemap">
+            <div class="inner">
+                <ul class="f-sitemap-list">
+                    <li class="item">
+                        <strong>모델</strong>
+                        <button class="f-sitemap-btn">
+                            모델
+                            <i class='bx bxs-chevron-down'></i>
+                        </button>
+                        <ul class="sub-menu">
+                            <li><a href="#">G90 LONG WHEEL BASE</a></li>
+                            <li><a href="#">G90</a></li>
+                            <li><a href="#">G80</a></li>
+                            <li><a href="#">ELCTRIFIED G80</a></li>
+                            <li><a href="#">G70</a></li>
+                            <li><a href="#">G70 SHOOTING BRAKE</a></li>
+                            <li><a href="#">GV80</a></li>
+                            <li><a href="#">GV80 COUPE</a></li>
+                            <li><a href="#">GV70</a></li>
+                            <li><a href="#">ELCTRIFIED GV70</a></li>
+                            <li><a href="#">GV60</a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <strong>구매</strong>
+                        <button class="f-sitemap-btn">
+                            구매
+                            <i class='bx bxs-chevron-down'></i>
+                        </button>
+                        <ul class="sub-menu">
+                            <li><a href="#">견적내기</a></li>
+                            <li><a href="#">구매 프로그램</a></li>
+                            <li><a href="#">전기차 구매가이드</a></li>
+                            <li><a href="#">구매 상담 신청</a></li>
+                            <li><a href="#">제네시스 스펙트롬</a></li>
+                            <li><a href="#">사양 조회하기</a></li>
+                        </ul>
+                    </li>
+                        <li class="item">
+                        <strong>체험</strong>
+                        <button class="f-sitemap-btn">
+                            체험
+                            <i class='bx bxs-chevron-down'></i>
+                        </button>
+                        <ul class="sub-menu">
+                            <li><a href="#">스페이스</a></li>
+                            <li><a href="#">시승신청</a></li>
+                            <li><a href="#">전시장 찾기</a></li>
+                            <li><a href="#">제네시스 드라이빙 익스피리언스</a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <strong>멤버스</strong>
+                        <button class="f-sitemap-btn">
+                            멤버스
+                            <i class='bx bxs-chevron-down'></i>
+                        </button>
+                        <ul class="sub-menu">
+                            <li><a href="#">제네시스 멤버십</a></li>
+                            <li><a href="#">MY GENESIS 앱</a></li>
+                            <li><a href="#">테크놀로지</a></li>
+                            <li><a href="#">차량관리 서비스</a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <strong>제네시스</strong>
+                        <button class="f-sitemap-btn">
+                            제네시스
+                            <i class='bx bxs-chevron-down'></i>
+                        </button>
+                        <ul class="sub-menu">
+                            <li><a href="#">브랜드</a></li>
+                            <li><a href="#">콘셉트카</a></li>
+                            <li><a href="#">제네시스X골프</a></li>
+                            <li><a href="#">모터쇼</a></li>
+                            <li><a href="#">로드트립</a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <strong>고객센터</strong>
+                        <button class="f-sitemap-btn">
+                            고객센터
+                            <i class='bx bxs-chevron-down'></i>
+                        </button>
+                        <ul class="sub-menu">
+                            <li><a href="#">고객센터 안내</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">자주 묻는 질문</a></li>
+                            <li><a href="#">다운로드 센터</a></li>
+                            <li><a href="#">PR 센터</a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <strong><a href="#">마이페이지</a></strong>
+                        <button class="f-sitemap-btn">
+                            마이페이지
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="f-company">
+            <div class="inner"> <!--이너안에 ul두개-->
+                <ul class="f-cp-list">
+                    <li><a href="#">사이트맵</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li class="privacy"><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">저작권 안내</a></li>
+                    <li><a href="#">보증안내</a></li>
+                    <li><a href="#">자동차 교환 및 환불 중재 규정 안내</a></li>
+                    <li><a href="#">하자 재발 통보 안내</a></li>
+                </ul>
+
+                <ul class="f-cp-sns">
+                    <li>
+                        <a href="#">
+                            <i class='bx bxl-facebook'></i>
+                            <span class="blind">페이스북</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class='bx bxl-instagram-alt' ></i>
+                            <span class="blind">인스타그램</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class='bx bxl-youtube' ></i>
+                            <span class="blind">유튜브</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="f-genesis">
+            <div class="inner">
+                <ul class="f-genesis-list">
+                    <li><a href="#"><i class='bx bx-world'></i>제네시스 월드와이드</a></li>
+                    <li><a href="#"><i class='bx bx-lock'></i>프라이버시 센터</a></li>
+                    <li><a href="#"><i class='bx bx-link-external'></i>제네시스 부티크</a></li>
+                    <li><a href="#"><i class='bx bx-link-external'></i>네비게이션 업데이트</a></li>
+                    <li><a href="#"><i class='bx bx-link-external'></i>제네시스 드라이빙 아카데미</a></li>
+                    <li><a href="#"><i class='bx bx-link-external'></i>윤리경영 사이버 감사실</a></li>
+                    <li><a href="#"><i class='bx bx-link-external'></i>인재 채용</a></li>
+                </ul>
+
+                <div class="f-lang">
+                    <a href="#" class="eng">ENG</a>
+                    <a href="#" class="kor">KOR</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="f-info">
+            <div class="inner">
+                <div class="f-info-wrap"> <!--padding값이 빠지는 영역 100% -->
+                    <div class="f-mark">
+                        <img src="./images/WEB ACCESSIBILITY.png" alt="웹 접근성 인증마크 획득">
+                    </div>
+                    <p class="info">
+                        © Copyright 2023 Hyundai Motor Company.<br> All Rights Reserved.
+                    </p>
+                </div>    
+            </div>
+        </div>
+    </footer>
+
+    <div class="chat-icon"> <!--header,main,footer어디에도 속하지 않기 때문에 따로 만듦. scss는 main.scss젤윙-->
+        <button class="chat-btn">
+            <span class="blind">채팅 상담</span>
+        </button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,405 @@
+.f-container{
+    background: $black;
+    .f-sns{
+        border-bottom: solid 1px rgba(255,255,255,0.7);
+        padding: 24px 0px;
+        .inner{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .f-sns-left{
+                display: flex;
+                align-items: center;;
+                gap:24px;
+                span{
+                    color: $white;
+                    font-size: 16px;
+                }
+                .f-sns-list{
+                    display: flex;
+                    gap: 24px;
+                    a{
+                        font-size: 20px;
+                        color: rgba(255,255,255,0.7);
+                        transition: 500ms;
+                    }
+                    li{
+                        &:hover a{
+                            color: rgba(255,255,255,1);
+                        }
+                    }
+                }
+                .f-sns-btn{
+                    font-size: 20px;
+                    background: transparent;
+                    border: none;
+                    color: $white;
+                    cursor: pointer;
+                }
+            }
+            
+            .f-top-btn{
+                color:$white;
+                font-size: 16px;
+                display: flex;
+                align-items: center;
+                border: none;
+                background: transparent;
+                gap: 12px;
+                cursor: pointer;
+                i{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .f-notice{
+        padding: 30px 0px;
+        .inner{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            .f-notice-list{
+                width: 100%; //flex는 100%해도 아래로떨어지지x 밀어냄
+                a{
+                    display: block;
+                    color: $white;
+                    font-size: 14px;
+                }
+            }
+
+            .f-notice-controls{
+                display: flex;
+                gap: 12px;
+                button{
+                    background: transparent;
+                    border: none;
+                    color: $white;
+                    padding: 0px;
+                    font-size: 20px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .f-sitemap{
+        background: #151515;
+        padding: 90px 0px;
+        .f-sitemap-list{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px 0px; //수직여백
+            .item{
+                width: 25%;
+                strong{
+                    font-size: 16px;
+                    color: $white;
+                    margin-bottom: 20px;
+                    display: inline-block; //margin이 안먹어서, inline이어서 마진이 안먹은 것, 인라인만 아니면 된다.
+                    a{
+                        color: $white;
+                    }
+                }
+
+                .f-sitemap-btn{
+                    display: none; //tablet에서? 보여질 것. 확인시 flex로
+                    width: 100%;
+                    color: $white;
+                    padding: 20px 30px;
+                    box-sizing: border-box;
+                    justify-content: space-between;
+                    border: none;
+                    border-top: solid 1px rgba(255,255,255,0.7);
+                    background: transparent;
+                    align-items: center;
+                    cursor: pointer;
+                }
+
+                .sub-menu{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    li{
+                        a{
+                            display: block;
+                            color: rgba(255,255,255,0.7);
+                            font-size: 14px;
+                            transition: 500ms;
+                        }
+                        &:hover a{
+                            color: rgba(255,255,255,1);
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    .f-company{
+        padding: 30px 0px;
+        border-bottom: solid 1px rgba(255,255,255,0.7);
+        .inner{
+            display: flex;
+            align-items: center;
+            justify-content: space-between; //아니면 sns에 margin-left auto줘도 양끝으로 정렬할 수 있음.
+            .f-cp-list{
+                display: flex;
+                align-items: center;
+                li{
+                    padding: 0px 24px;
+                    position: relative;
+                    top: 0px;
+                    left: 0px;
+                    &:first-of-type{
+                        padding-left: 0px;
+                    }
+                    &:last-of-type{
+                        padding-right: 0px;
+                    }
+                    &:after{
+                        content: "";
+                        width: 1px;
+                        height: 15px;
+                        background: rgba(255,255,255,0.3);
+                        display: block;
+                        position: absolute;
+                        top: 0px;
+                        right: 0px;
+                    }
+                    &:last-of-type:after{
+                        display: none;
+                    }
+                    a{
+                        font-size: 14px;
+                        color: rgba(255,255,255,0.7);
+                        transition: 500ms;
+                    }
+                    &:hover a{
+                        color: rgba(255,255,255,1);
+                    }
+                }
+                /*gap: 24px;
+                li{
+                    position: relative;
+                    top: 0px;
+                    left: 0px;
+                    &:after{
+                        content: "";
+                        display: block;
+                        width: 1px;
+                        height: 14px;
+                        background: $white;
+                        position: absolute;
+                        top: 0px;
+                        right: 0px;
+                    }
+                }*/
+                
+                .privacy{
+                    a{
+                        color: #c36f51;
+                    }
+                    &:hover a{
+                        color: #c36f51;
+                    }
+                }
+            }
+
+            .f-cp-sns{
+                display: flex;
+                align-items: center;
+                padding: 0px 14px;
+                gap: 20px;
+                li{
+                    a{
+                        font-size: 30px;
+                        padding: 5px;
+                        color: $white;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .f-genesis{
+        padding: 30px 0px;
+        border-bottom: solid 1px rgba(255,255,255,0.7);
+        .inner{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .f-genesis-list{
+                display: flex;
+                gap: 24px 48px;
+                flex-wrap: wrap;
+                align-items: center;
+                li{
+                    a{
+                        display: flex;
+                        color: rgba(255,255,255,0.7);
+                        font-size: 14px;
+                        align-items: center;
+                        gap: 10px;//icon과text사이
+                        .bx{
+                            font-size: 16px;
+                        }
+                    }
+                    &:hover a{
+                        color: rgba(255,255,255,1);
+                    }
+                }
+            }
+            .f-lang{
+                display: flex;
+                a{
+                    display: flex;  //텍스트정렬
+                    width: 80px;
+                    height: 36px;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 14px;
+                }
+                .eng{
+                    color: $white;
+                    background:#222222;
+                }
+                .kor{
+                    color: #222222;
+                    background: $white;
+                }
+            }
+        }
+    }
+
+    .f-info{
+        //인증마크는 flex로하면 어려우니 position으로 고정시키고 나머진 flex로
+        padding: 50px 0px;
+        .inner{
+            .f-info-wrap{ //f-mark가 inner?끝에 고정되게 하기 위해 padding값이 빠지는 영역 div를 추가해서 감싸줌. 그리고 position을 줘서 f-mark가 고정되게 함.
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                top: 0px;
+                left: 0px;  
+                .info{
+                    color: $white;
+                    font-size: 12px;
+                    padding-top: 56px; //background로 넣어줄 로고이미지와 p태그 텍스트사이 여백
+                    background: url(../../images/footer-logo.png) no-repeat center top / 132px;//footer이미지로고 꾸며주는 요소 -> 백그라운드 처리로
+                    text-align: center;
+                    line-height: 1.5;
+                }
+                .f-mark{
+                    width: 81px;
+                    height: 58px;
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                }
+            }
+            
+        }
+    }
+}
+
+@include tablet{
+    .f-container{
+        .f-notice{
+            padding-top: 60px;
+            .inner{
+                gap: 60px;
+                flex-direction: column;
+            }
+        }
+
+        .f-sitemap{
+            padding: 0px;
+            .f-sitemap-list{
+                flex-direction: column;
+                gap: 0px;
+                .item{
+                    width: 100%;
+
+                    strong,
+                    .sub-menu{
+                        display: none;
+                    }
+                    .f-sitemap-btn{
+                        display: flex; //block을 주면 flex속성 못받음(아까 justify align 속성 지정해줬는데 애들이 flex속성이기 때문에.) 기존에 flex 속성이 있는 경우 flex로. 일반적으론 block을 넣음.
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        .f-company{
+            border-bottom: none;
+            .inner{
+                flex-direction: column; //떨
+                gap: 24px;
+                .f-cp-list{
+                    flex-wrap : wrap;//떨
+                    // 떨어질 조건을 강제로 만들어준다.
+                    width: 230px; //width 230에 맞춰 아래로 떨어진다.
+                    gap: 24px 0px;//수직gap
+                    justify-content: center; //한줄로 가운데로
+                    li{
+                        padding: 0px 12px;
+                        a{
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .f-genesis{
+            .inner{
+                flex-direction: column;
+                gap: 45px; //f-lang과 f-genesis-list사이
+                .f-genesis-list{
+                    flex-direction: column;
+                    width: 100%;
+                    gap: 0px;
+                    align-items: start;//align-item이 가운데가 아닌 처음으로
+                    li{
+                        border-bottom: solid 1px rgba(255,255,255,0.7);
+                        width: 100%;
+                        padding: 24px 10px 18px;
+                        box-sizing: border-box;
+                        a{
+                            justify-content: space-between; //아이콘 텍스트 양 끝으로 떨어짐
+                            .bx{
+                                order: 1; //아이콘-텍스트 좌우바꾸기 : flex중에 순서 바꾸기 order,
+                            }
+                        }
+                    }
+                }
+                .f-lang{
+                    width: 100%;
+                    a{
+                        width: 50%;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+        
+        .f-info{
+            .inner{
+                .f-info-wrap{
+                    .f-mark{
+                        display: none;
+                    }
+                }
+            }
+        }
+
+    }
+}
+

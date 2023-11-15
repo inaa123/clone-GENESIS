@@ -1,0 +1,172 @@
+.h-container {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    background: $black;
+    .inner {
+        display: flex; //float안쓰고 flex만 쓸거임
+        align-items: center;
+    }
+}
+
+.logo{
+    width: 125px;
+    margin-right: 68px;       
+}
+
+.gnb{
+    height: 100%;
+    .gnb-list{
+        display: flex;
+        gap: 60px;
+        height: 100%;
+        li a{
+            display: flex;
+            align-items: center;
+            height: 100%;
+            color: rgba(255,255,255,0.7);
+            transition: 300ms;
+            font-size: 15px;
+            &:hover{
+                color: rgba(255,255,255,1);
+            }
+        }
+    }
+}
+
+.support-menu{
+    margin-left: auto;
+    display: flex;
+    height: 100%;
+    gap: 30px;
+    a{
+        display: flex;
+        color: rgba(255,255,255,0.7);
+        transition: 300ms;
+        align-items: center;
+        height: 100%;
+        font-size: 14px;
+        &:hover{
+            color: rgba(255,255,255,1);
+        }
+        img{
+            width: 17px;
+        }
+    }
+    img{
+        display: none;
+    }
+    .search-btn{
+        img{
+            display: block;
+        }
+    }
+}
+
+.ham-btn{
+    width: 66px;
+    height: 100%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding: 0px 22px;
+    box-sizing: border-box;
+    margin-left: 22px;
+
+    div {
+        width: 100%;
+        height: 13px;
+        position:  relative;
+        top: 50%;
+        left: 0px;
+        transform: translateY(-50%);
+        i {
+            width : 100%;
+            height: 2px;
+            background: $white;
+            position: absolute;
+            left: 0px; //top은 따로 줄거임 레프트만 공통으로 줌.
+            transition: 500ms;
+        }
+        .line01 {
+            top: 0px;
+        }
+        .line02{
+            top: 100%;
+        }
+    }
+    &:hover{
+        .line01{
+            top: 50%;
+            transform: rotate(45deg);
+        }
+        .line02{
+            top: 50%;
+            transform: rotate(-45deg);
+        }
+    }
+
+    &:before{
+        content:"";
+        width: 1px;
+        height: 20px;
+        background: rgba(255,255,255,0.3);
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        transform: translateY(-50%);
+
+    }
+}
+
+@include laptop{ //laptop : 1600px;
+    .logo{
+        margin-right: 50px;
+        width: 100px;
+    }
+}
+@include laptop02{ //laptop02: 1400px;
+    .gnb{
+        .gnb-list{
+            gap: 40px;
+        }
+    }
+    .support-menu{
+        a{
+            .text{
+                display: none;
+            }
+            img{
+                display: block;
+            }
+        }
+    }
+}
+
+@include tablet{ //tablet : 1024px;
+    .h-container{
+        height: 60px;
+        .logo{
+            width: 85px;
+        }
+    }
+    .gnb{
+        display: none;
+    }
+    .support-menu{
+        .sup-link,
+        .search-btn{
+            display: none;
+        }
+    }
+    .ham-btn{
+        margin-left: 0px;
+        &:before{
+            display: none;
+        }
+    }
+}
