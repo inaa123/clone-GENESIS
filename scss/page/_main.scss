@@ -322,7 +322,7 @@
                     width: 100%;
                     height: 100%;
                     opacity: 1;
-                    transition: height 100ms, width 100ms 100ms; //widh 0.5초 기다렸다가 셍ㄱ;ㄱ[
+                    transition: height 100ms, width 100ms 100ms; //widh 0.5초 기다렸다가 생김
                 }
                 &:after{
                     content: "";
@@ -512,13 +512,13 @@
                 background: rgba(0,0,0,0.5);
             }
             .text-box{
-                //padding으로 .. 여백으로 했기 때문에 포지션으로 잡아야함..?
-                position: absolute; // 포지션으로 잡아둔 다응ㅁ 패딩으로 처리해도 ㄱㅊ
+                //padding으로  여백으로 했기 때문에 포지션으로 잡아야함
+                position: absolute; // 포지션으로 잡아둔 다음 패딩으로 처리해도 ㄱㅊ
                 top: 0px;
                 left: 0pc;
                 padding: 60px;
                 width: 500px;
-                z-index: 2; //포지션 겹치는?부분 위로 올라오게..??
+                z-index: 2; //포지션 겹치는 부분 위로 올라오게
                 .title{
                     color: $white;
                     font-size: 42px;

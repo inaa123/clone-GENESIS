@@ -1,4 +1,4 @@
-//mixin보다 활용도 높은 경우?, 굳이 값이 바뀌지 않으면 클래스로 ㅅ써도 됨.
+//mixin보다 활용도 높은 경우?, 굳이 값이 바뀌지 않으면 클래스로 써도 됨.
 .inner{
     width : auto;
     height : 100%;
@@ -10,7 +10,7 @@
 
 .blind{
     position: absolute;
-    width: 1px; //size없ㅇ으면 blind안됨
+    width: 1px; //size없으면 blind안됨
     height: 1px;
     clip : rect( 1px, 1px, 1px, 1px);
     overflow: hidden;
